@@ -15,7 +15,7 @@
 (check-expect (m/s->mph 1609.344) 3600)
 
 ;; Q4 b) Function Definition for mph->s/mfn
-(define (mph->s/mfn mph)
+(define (mph->S/mfn mph)
   (/ (* (/ (* mph 1609.344) 3600.0) 1209.6) 1.7018))
 
 ;; Example test case

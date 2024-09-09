@@ -9,14 +9,14 @@
 
 ;; Q4 a) Function Definition for min-wager
 (define (min-wager c1 c2 c3)
-  (+ 1 (- (* 2 (max c2 c3)) c1)))
+  (- (max c2 c3) (+ c1 1)))
 
 ;; Example test case
-(check-expect (min-wager 10000 7000 8000) 6001)
+(check-expect (min-wager 1000 7000 8000) 6001)
 
 ;; Q4 b) Function Definition for missed-question
 (define (missed-question c1 c2 c3)
   (- c1 (min-wager c1 c2 c3)))
 
 ;; Example test case
-(check-expect (missed-question 10000 7000 8000) 3999)
+(check-expect (missed-question 1000 7000 8000) 3999)

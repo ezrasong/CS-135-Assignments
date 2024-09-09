@@ -17,7 +17,7 @@
 
 ;; Q3 c) Function Definition for cone-area
 (define (cone-area r h)
-  (* (* pi r) (+ r (sqrt (+ (sqr h) (sqr r))))))
+  (* (pi r) (+ r (sqrt (+ (sqr h) (sqr r))))))
 
 ;; Q3 d) Function Definition for escape speed
 (define (escape M r)
@@ -25,7 +25,7 @@
 
 ;; Q3 e) Function Definition for partition-size-approximation
 (define (partition-size-approximation n)
-  (* (/ 1 (* 4 n (sqrt 3))) (exp (* pi (sqrt (/ (* 2 n) 3))))))
+  (* (/ 1 (* 4 n (sqrt 3))) (expt (exp (* pi (sqrt (/ (* 2 n) 3)))))))
 
 ;; Q3 f) Function Definition for (Black-Scholes formula
 (define (d1 maturity rate volatility spot-price strike-price)
