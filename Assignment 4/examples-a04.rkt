@@ -7,6 +7,7 @@
 (check-expect (list-has-exactly-4-symbols (list 'a 'b 'c 'd)) true)
 (check-expect (list-has-exactly-4-symbols (list 'a 1 "b" 'c 'd)) false)
 
+;; b)
 (check-expect (add-only-numbers (list "text" 5 'sym 10)) 15)
 (check-expect (add-only-numbers (list 'a 'b "str")) 0)
 
